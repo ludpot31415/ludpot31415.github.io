@@ -1,0 +1,54 @@
+.shop {
+    width:90vw;
+    min-height:500px;
+    margin-left:5vw;
+    background-color:#dddcc5;
+}
+
+.shop .productSelection {
+    list-style: none;
+    font-size:2vw;
+    color:#1d2326;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.productSelection a {
+    text-align: center;
+    
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+.productSelection a:hover {
+    cursor: pointer;
+    color:#6a6a61;
+}
+
+
+
+/*
+    Ipads n' stuff
+*/
+@media screen and (max-width: 1200px) {
+    
+}
+
+
+
+/*
+    Computers
+*/
+@media screen and (min-width: 1200px) {
+    #display {
+        width:100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    
+    #display .item {
+        width:75%;
+        margin:3vw;
+    }
+}

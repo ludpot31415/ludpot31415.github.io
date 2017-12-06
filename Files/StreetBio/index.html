@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>StreetBio</title>
+        
+        <link href="main.css" rel="stylesheet" type="text/css">
+        <link href="index.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="topbar">
+            <a href="index.html"><img src="Images/Logo.png" href="#" class="logo"></a>
+            <div class="nav">
+                <ul>
+                    <li><a onclick="scrollWin(1000)">Om os</a></li>
+                    <li><a href="shop.html">Butik</a></li>
+                    <li><a onclick="scrollWin(1500)">Lokalitet</a></li>
+                    <li><a href="#">Kontakt os</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="productNav">
+            <a href="#"><div id="productNav1"></div></a>
+            <a href="#"><div id="productNav2"></div></a>
+            <a href="#"><div id="productNav3"></div></a>
+            <a href="#"><div id="productNav4"></div></a>
+        </div>
+        <div class="section" id="section1">
+            <div class="content">
+            <article id="article1">
+                <h1 class="header">Hvad er Street Bio?</h1>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros ligula, scelerisque ut malesuada vel, iaculis sed enim. Nam nec venenatis libero. In sed purus ut justo hendrerit molestie finibus vitae purus. Aenean urna ante, egestas id hendrerit a, mollis lobortis nisl. Integer eu felis a tortor auctor ultricies et eget libero. Fusce lacinia vel libero eget eleifend.</p>
+            </article>
+            <img src="Images/Skateboard.jpg" class="textImage">
+            </div>
+        </div>
+        <div class="section" id="section2">
+            <div class="content">
+                <img src="Images/map.png" class="textImage">
+                <article id="article2">
+                    <h1 class="header">Lokalitet</h1>
+                    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eros ligula, scelerisque ut malesuada vel, iaculis sed enim. Nam nec venenatis libero. In sed purus ut justo hendrerit molestie finibus vitae purus. Aenean urna ante, egestas id hendrerit a, mollis lobortis nisl. Integer eu felis a tortor auctor ultricies et eget libero. Fusce lacinia vel libero eget eleifend.</p>
+                </article>
+            </div>
+        </div>
+        <script>
+            function scrollWin(ypos) {
+                window.scrollBy(0, ypos);
+            }
+        </script>
+    </body>
+</html>

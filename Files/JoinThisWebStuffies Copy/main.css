@@ -1,0 +1,57 @@
+html {
+    background-image:url(Images/Galaxy.png);
+    background-color: #131313;
+}
+
+body {
+    float:left;
+    font-family: "Helvetica";
+    background-color: rgba(0,0,0,0.75);
+    box-shadow: 0 0 2px rgba(200, 200, 200, 0.12);
+    color: #EEE;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0px 12.5vw;
+    max-width: 65vw;
+    padding: 0px 5vw;
+}
+
+.section {
+    float:left;
+    margin-top:100px;
+}
+
+h1 {
+    margin-bottom: 0px;
+}
+
+img {
+    animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
+    background: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+    border-radius: 10px;
+    display: block;
+    margin: 1.3em auto;
+    margin-bottom: 3px;
+    max-width: 95%;
+}
+
+.imgtext {
+    font-size: 12px;
+    font-family: "Calibri";
+    margin-left: 1.5em;
+}
+
+hr {
+  border: 0; 
+  height: 1px; 
+  background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+  background-image: -ms-linear-gradient(left, #f0f0f0, #ACACAC, #f0f0f0);
+  background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0); 
+}
+
+.byline {
+    font-style: italic;
+    font-size: 14px;
+}

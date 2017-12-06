@@ -1,0 +1,90 @@
+/*
+    Ipads n' stuff
+*/
+@media screen and (max-width:1200px) {
+    .section {
+        float:left;
+        color:#dddcc5;
+        width:100vw;
+        height:500px;
+        margin:50px 0px;
+        padding:50px 0px;
+        background-color:#1d2326;
+        
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    
+    .section .content {
+        width:90vw;
+        margin:0px 5vw;
+    }
+    
+    .section .content article {
+        float:left;
+        width:86vw;
+        margin:0px 2vw;
+    }
+    
+    .section .content article .header {
+        text-align: center;
+        font-size:35px;
+    }
+    
+    .section .content article .text {
+        font-size:25px;
+    }
+    
+    .section .content .textImage {
+        float:left;
+        width:80vw;
+        margin: 0px 5vw;
+    }
+}
+
+
+
+/*
+    Computer
+*/
+@media screen and (min-width:1200px) {
+    .section {
+        float:left;
+        color:#dddcc5;
+        width:100vw;
+        height:500px;
+        margin:50px 0px;
+        padding:50px 0px;
+        background-color:#1d2326;
+        
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .section .content {
+        width:90vw;
+        margin:0px 5vw;
+    }
+    
+    .section .content article {
+        float:left;
+        width:41vw;
+        margin:0px 2vw;
+    }
+    
+    .section .content article .header {
+        text-align: center;
+        font-size:35px;
+    }
+    
+    .section .content article .text {
+        font-size:25px;
+    }
+    
+    .section .content .textImage {
+        float:left;
+        width:41vw;
+        margin: 0px 2vw;
+    }
+}

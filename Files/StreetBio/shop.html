@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>StreetBio - Shop</title>
+        
+        <link href="main.css" rel="stylesheet" type="text/css">
+        <link href="shop.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet">
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-size=1.0">
+    </head>
+    <body>
+        <div class="topbar">
+            <a href="index.html"><img src="Images/Logo.png" class="logo"></a>
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html">Om os</a></li>
+                    <li><a href="#">Butik</a></li>
+                    <li><a href="index.html">Lokalitet</a></li>
+                    <li><a href="#">Kontakt os</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="shop">
+            <ul class="productSelection">
+                <a onclick="productSelect(0)" class="productButton" id="productButtonAll"><li>All</li></a>
+                <a onclick="productSelect(1)" class="productButton" id="productButtonSupreme"><li>Supreme</li></a>
+                <a onclick="productSelect(2)" class="productButton" id="productButtonPalace"><li>Palace</li></a>
+                <a onclick="productSelect(3)" class="productButton" id="productButtonThrasher"><li>Thrasher</li></a>
+                <a onclick="productSelect(4)" class="productButton" id="productButtonVans"><li>Vans</li></a>
+            </ul>
+            <div id="display">
+                <img src='Images/Products/Supreme/supreme1.jpg' class='item supreme'>
+                <img src='Images/Products/Supreme/supreme2.jpg' class='item supreme'>
+                <img src='Images/Products/Palace/palace1.jpg' class='item palace'>
+                <img src='Images/Products/Palace/palace2.jpg' class='item palace'>
+                <img src='Images/Products/Thrasher/thrasher1.jpg' class='item thrasher'>
+                <img src='Images/Products/Thrasher/thrasher2.jpg' class='item thrasher'>
+                <img src='Images/Products/Vans/vans1.jpg' class='item vans'>
+                <img src='Images/Products/Vans/vans2.jpg' class='item vans'>
+            </div>
+        </div>
+        <script>
+            function productSelect(products) {
+                disp = document.getElementById('display');
+                
+                items = document.getElementsByClassName('item');
+                supreme = document.getElementsByClassName('supreme');
+                palace = document.getElementsByClassName('palace');
+                thrasher = document.getElementsByClassName('thrasher');
+                vans = document.getElementsByClassName('vans');
+                
+                buttons = document.getElementsByClassName('productButton');
+                
+                for(var i = 0; i < items.length; i++){
+                    items[i].style.display = "none";
+                }
+                
+                for(var i = 0; i < buttons.length; i++) {
+                    buttons[i].style.backgroundColor = "#dddcc5"
+                }
+                
+                
+                
+                if(products == 0){
+                    document.getElementById('productButtonAll').style.backgroundColor = "#958976";
+                    
+                    for(var i = 0; i < items.length; i++){
+                        items[i].style.display = "block";
+                    }
+                } else if(products == 1) {
+                    document.getElementById('productButtonSupreme').style.backgroundColor = "#958976";
+                    
+                    for(var i = 0; i < supreme.length; i++){
+                        supreme[i].style.display = "block";
+                    }
+                } else if(products == 2) {
+                    document.getElementById('productButtonPalace').style.backgroundColor = "#958976";
+                    
+                    for(var i = 0; i < palace.length; i++){
+                        palace[i].style.display = "block";
+                    }
+                } else if(products == 3) {
+                    document.getElementById('productButtonThrasher').style.backgroundColor = "#958976";
+                    
+                    for(var i = 0; i < thrasher.length; i++){
+                        thrasher[i].style.display = "block";
+                    }
+                } else if(products == 4) {
+                    document.getElementById('productButtonVans').style.backgroundColor = "#958976";
+                    
+                    for(var i = 0; i < vans.length; i++){
+                        vans[i].style.display = "block";
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>

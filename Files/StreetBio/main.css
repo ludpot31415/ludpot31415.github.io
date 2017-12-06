@@ -1,0 +1,255 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin:0px;
+    background-color:/*#6a6a61*/#1d2326;
+    max-width:100vw;
+    font-family: Vollkorn, sans-serif;
+}
+
+
+
+/*
+    Ipads n' stuff
+*/
+@media screen and (max-width:1200px) {
+    body {
+        display:grid;
+    }
+    
+    .topbar {
+        float:left;
+        width:100vw;
+        height:500px;
+        
+        background-color:#611427;
+    }
+    
+    .topbar .logo {
+        float:left;
+        margin-left:40vw;
+        margin-top:50px;
+        margin-bottom:100px;
+        height:40%;
+        background-color:#dddcc5;
+        padding:20px;
+        border-radius: 100%;
+    }
+    
+    .topbar .nav {
+        float:right;
+        background-color:rgba(0,0,0,0.5);
+    }
+    
+    .topbar .nav ul {
+        width:100vw;
+        list-style: none;
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    
+    .topbar .nav ul a {
+        color:#dddcc5;
+        text-decoration: none;
+        font-size:3vw;
+        
+        -webkit-transition-duration:0.4s;
+        transition-duration:0.4s;
+    }
+    
+    .topbar .nav ul a:hover {
+        color:#958976;
+    }
+    
+    .productNav {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "prod1"
+            "prod2"
+            "prod3"
+            "prod4";
+    }
+    
+    .productNav a div {
+        height: 500px;
+        width:25vw;
+        background-position: center;
+        
+        transition: background-size 0.4s ease-in;
+        -moz-transition: background-size 0.4s ease-in;
+        -ms-transition: background-size 0.4s ease-in;
+        -o-transition: background-size 0.4s ease-in;
+        -webkit-transition: background-size 0.4s ease-in;
+    }
+    
+    .productNav a #productNav1 {
+        background-size:185%;
+        background-image: url(Images/Supreme.jpg);
+        grid-area:prod1;
+    }
+    
+    .productNav a #productNav1:hover {
+        background-size:205%;
+    }
+    
+    .productNav a #productNav2 {
+        background-size:450%;
+        background-image: url(Images/Palace.jpg);
+        grid-area:prod2;
+    }
+    
+    .productNav a #productNav2:hover {
+        background-size:500%;
+    }
+    
+    .productNav a #productNav3 {
+        background-size:180%;
+        background-image: url(Images/Thrasher.jpg);
+        grid-area:prod3;
+    }
+    
+    .productNav a #productNav3:hover {
+        background-size:200%;
+    }
+    
+    .productNav a #productNav4 {
+        background-size:180%;
+        background-image: url(Images/vans.jpg);
+        grid-area:prod4;
+    }
+    
+    .productNav a #productNav4:hover {
+        background-size:200%;
+    }
+}
+
+
+
+/*
+    Phones
+*/
+@media screen and (max-width:740px) {
+    
+}
+
+
+
+/*
+    Computers
+*/
+@media screen and (min-width:1200px) {
+    body {
+        display:grid;
+    }
+    
+    .topbar {
+        float:left;
+        width:100vw;
+        height:500px;
+        
+        background-color:#611427;
+    }
+    
+    .topbar .logo {
+        float:left;
+        margin-left:40vw;
+        margin-top:50px;
+        margin-bottom:50px;
+        height:40%;
+        background-color:#dddcc5;
+        padding:20px;
+        border-radius: 100%;
+    }
+    
+    .topbar .nav {
+        float:right;
+        background-color:rgba(0,0,0,0.5);
+    }
+    
+    .topbar .nav ul {
+        width:100vw;
+        list-style: none;
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    
+    .topbar .nav ul a {
+        color:#dddcc5;
+        text-decoration: none;
+        font-size:3vw;
+        
+        -webkit-transition-duration:0.4s;
+        transition-duration:0.4s;
+    }
+    
+    .topbar .nav ul a:hover {
+        color:#958976;
+    }
+    
+    .productNav {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "prod1"
+            "prod2"
+            "prod3"
+            "prod4";
+    }
+    
+    .productNav a div {
+        height: 500px;
+        width:25vw;
+        background-position: center;
+        
+        transition: background-size 0.4s ease-in;
+        -moz-transition: background-size 0.4s ease-in;
+        -ms-transition: background-size 0.4s ease-in;
+        -o-transition: background-size 0.4s ease-in;
+        -webkit-transition: background-size 0.4s ease-in;
+    }
+    
+    .productNav a #productNav1 {
+        background-size:115%;
+        background-image: url(Images/Supreme.jpg);
+        grid-area:prod1;
+    }
+    
+    .productNav a #productNav1:hover {
+        background-size:135%;
+    }
+    
+    .productNav a #productNav2 {
+        background-size:285%;
+        background-image: url(Images/Palace.jpg);
+        grid-area:prod2;
+    }
+    
+    .productNav a #productNav2:hover {
+        background-size:320%;
+    }
+    
+    .productNav a #productNav3 {
+        background-size:113%;
+        background-image: url(Images/Thrasher.jpg);
+        grid-area:prod3;
+    }
+    
+    .productNav a #productNav3:hover {
+        background-size:130%;
+    }
+    
+    .productNav a #productNav4 {
+        background-size:112%;
+        background-image: url(Images/vans.jpg);
+        grid-area:prod4;
+    }
+    
+    .productNav a #productNav4:hover {
+        background-size:130%;
+    }
+}
