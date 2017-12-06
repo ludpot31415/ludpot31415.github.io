@@ -1,0 +1,234 @@
+/* Copyright © 2017 thePasta */
+
+body {
+    margin: 0px;
+    background-color:#171717;
+}
+
+#topBar {
+    position: fixed;
+    float:left;
+    margin-top: -45;
+    height:31px;
+    width:100%;
+    background-color:#292929;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+#navBar {
+    float:left;
+    margin: 0px;
+    width:100%;
+    height:100%;
+}
+
+.fLeft {
+    float:left;
+}
+
+.fRight {
+    float:right;
+}
+
+#topBar a {
+    padding:2.6 5px;
+    margin-right:50px;
+    text-decoration: none;
+    font-family: "Chiller";
+    color: white;
+    font-size: 22px;
+    border-radius:5px;
+    
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+}
+
+#topBar a:hover {
+    background-color:#222;
+}
+
+#selPage {
+    background-color:#191919;
+}
+
+#ContentWrapper {
+    margin:45px 6%;
+}
+
+.storyHeader {
+    margin-left: 3%;
+    text-shadow: 0px 0px 8px #900;
+}
+
+#Content {
+    margin: 0px;
+    padding: 0px;
+    min-height: 67.5%;
+    overflow: hidden;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+}
+
+#textContent {
+    margin: 0px;
+    padding: 0px;
+    min-height: 67.5%;
+    overflow: hidden;
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    
+}
+
+#textContent ul {
+    list-style:decimal;
+}
+
+#textContent li {
+    margin-top: 1%;
+    text-decoration: none;
+    color: #FFF;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+#textContent h1 {
+    color: #FFF;
+    margin-left: 1%;
+}
+
+#textContent p {
+    color: #FFF;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+#textContent input {
+    margin-left: 1%;
+    width: 300px;
+}
+
+#textContent span {
+    color: #FFF;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+#textContent textarea {
+    color: #000;
+    margin-left: 1%;
+    resize: none;
+    margin-bottom: 1%;
+}
+
+#textContent select {
+    background-color: #FFF
+    color: #000;
+    margin-left: 1%;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
+.story {
+    padding:5px;
+    border-radius: 15px;
+    color:#FFF;
+    border-color:#444;
+    border-style: solid;
+    margin:3%;
+    float:left;
+    width:300px;
+    height:300px;
+    overflow:hidden;
+    
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    
+    background-color: #333; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#333, #222); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#333, #222); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#333, #222); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#333, #222); /* Standard syntax */
+}
+
+.story:hover {
+    -webkit-box-shadow:  0px 0px 50px #000;
+    box-shadow:  0px 0px 50px #000;
+}
+
+.story h2 {
+    margin:5px;
+    float:left;
+}
+
+.story p {
+    float:left;
+    margin:5px;
+}
+
+.story a {
+    color:#a15;
+    text-decoration: none;
+    float:left;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  padding: 10px;
+  width: 50%;
+  margin-left: 18%;
+  height: 94%;
+  top: 48%;
+  margin-top: -24%;
+  z-index: 20;
+    
+  background: #333;
+  color: #FFF;
+  border: 2px solid #444;
+  border-radius: 8px;
+
+  -webkit-box-shadow:  0px 0px 0px 9999px rgba(0, 0, 0, 0.5);
+  box-shadow:  0px 0px 0px 9999px rgba(0, 0, 0, 0.5);
+  
+  overflow: auto;
+}
+
+.popup br {
+    margin-bottom: 100px;
+}
+
+.xclose {
+    right: 27%;
+    position: fixed;
+    color: red;
+    text-decoration: none;
+    font-family: Chiller;
+    font-size: 30px;
+    background-color:#333;
+    padding:10px;
+    border-radius: 8px;
+}   
+
+.popup h2 {
+    text-align: left;
+    margin: 5px;
+}
+
+.popup p {
+    text-align: left;
+    margin:5px;
+}
+
+footer {
+    float:right;
+    width:100%;
+    background-color:#292929;
+    box-shadow: 0px 0px 20px #292929;
+    text-align: center;
+}
+
+footer p {
+    margin-left:20px;
+    color:#fff;
+}

@@ -1,0 +1,10 @@
+body {
+    overflow: auto;
+    font-family: "Consolas";
+    font-size: 10px;
+    background-color: #111;
+}
+
+p {
+    color: #EEE;
+}

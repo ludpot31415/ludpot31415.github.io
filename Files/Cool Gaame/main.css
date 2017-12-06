@@ -1,0 +1,142 @@
+body {
+    margin:0px;
+    background-color:#053;
+    overflow:hidden;
+}
+
+#startButtons {
+    position: absolute;
+    left:0;
+    top:0;
+    right:0;
+    bottom:0;
+    background-color:#000;
+    z-index: 1000;
+}
+
+#startButtons .startButton {
+    float: left;
+    border:none;
+    background-color:#eee;
+    font-size:50px;
+    text-align: center;
+    width:25%;
+    height:50%;
+    margin-top:10%;
+    margin-left:6.5%;
+    margin-right:auto;
+    border-radius:50px;
+    cursor: grab;
+}
+
+#regular {
+    border: 2px 2px 2000px white;
+}
+
+canvas {
+    position: absolute;
+    border-bottom: 10px solid #333;
+    border-right: 10px solid #333;
+    border-top: 10px solid #333;
+    border-left: 10px solid #333;
+    background-color: #222;
+    margin: auto;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    border-radius:50px;
+}
+
+.ui {
+    font-family: monospace;
+    text-align: center;
+    font-size:50px;
+    width:100%;
+    -webkit-user-select: none; /* Chrome, Opera, Safari */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none; /* Standard syntax */
+}
+
+.display {
+    display: inline-flex;
+    margin:0px 50px;
+    -webkit-user-select: none; /* Chrome, Opera, Safari */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none; /* Standard syntax */
+}
+
+#selectButtons {
+    color:#fff;
+    position: absolute;
+    left:0;
+    right:0;
+    top:75%;
+    bottom:0;
+}
+
+#selectButtons .buttonCollection {
+    margin-bottom:10px;
+    padding:5px 0px;
+    background-color:#031;
+}
+
+#selectButtons #styleSelectContainer .styleButton {
+    width:100px;
+    height:50px;
+    border:5px solid #222;
+}
+
+#selectButtons #styleSelectContainer #greenButton {
+    background-color:#053;
+    border-color:#032;
+    border-radius: 80px;
+}
+
+#selectButtons #styleSelectContainer #blueButton {
+    background-color:#035;
+    border-color:#013;
+    border-radius: 80px;
+}
+
+#selectButtons #styleSelectContainer #redButton {
+    background-color:#502;
+    border-color:#301;
+    border-radius: 80px;
+}
+
+#selectButtons #styleSelectContainer #whiteButton {
+    background-color:#eee;
+    border-color:#ccc;
+    border-radius: 80px;
+}
+
+#selectButtons .gamemodeButton {
+    width:100px;
+    height:50px;
+}
+
+#normal {
+    background-color: #990;
+    border: 5px solid #550;
+    border-radius: 80px;
+}
+
+#hard {
+    background-color: #900;
+    border: 5px solid #500;
+    border-radius: 80px;
+}
+
+#insane {
+    background-color: #111;
+    border: 5px solid #000;
+    border-radius: 80px;
+}

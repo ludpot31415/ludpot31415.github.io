@@ -1,0 +1,77 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="main.css">
+        <title>thePasta - Guidelines</title>
+    </head>
+    <body>
+        <header id="topBar" onmouseover="topDropDown();" onmouseout="topRetract();" style="height:70px;">
+            <ul id="navBar">
+                <a href="featured.html" class="fLeft" style="padding: 22px 10px;">Featured</a>
+                <a href="gore.html" class="fLeft" style="padding: 22px 10px;">Gore</a>
+                <a href="lore.html" class="fLeft" style="padding: 22px 10px;">Lore</a>
+                <a href="series.html" class="fLeft" style="padding: 22px 10px;">Series</a>
+                <a href="terror.html" class="fLeft" style="padding: 22px 10px;">Terror</a>
+                <a href="urbanlegends.html" class="fLeft" style="padding: 22px 10px;">Urban Legends</a>
+                <a href="submit.html" class="fRight" style="padding: 22px 10px;">Submit</a>
+                <a href="guidelines.html" class="fRight" id="selPage" style="padding: 22px 10px;">Guidelines</a>
+                <a href="updates.html" class="fRight" style="padding: 22px 10px;">Updates</a>
+            </ul>
+        </header>
+        <div id="ContentWrapper">
+        <h1 class="storyHeader" style="font-family:Footlight MT Light; color:#880015; font-size:50;">Guidelines</h1>
+            <div id="textContent">
+                <h1>Site Rules and Guidelines</h1>
+                <p><b>Story Submissions</b></p>
+                <ul>
+                    <li>A Story submission will be denied if it does not contain proper English or text layout.</li>
+                    <li>A Story submission will be denied if it contains any attempts of BBCode, Markdown or other layout formats.</li>
+                    <li>A Story submission will be denied if it is plagiarized - meaning you copy another authors story and post it in your name.</li>
+                    <li>A Story submission will be denied if it contains links of any form.</li>
+                    <li>A Story submission will be denied if it contains any sort of pornographic or sexual content. This excludes <b>very</b> softcore situations.</li>
+                    <li>Abusing the Submit function (e.g. Spamming or non-story related content) will result in a permanent IP blacklist.</li>
+                </ul>
+                <p><b>Commenting and Rating</b></p>
+                <ul>
+                    <li>Comments including insults, cursing or any form of discriminative language will be denied.</li>
+                    <li>Comments without proper reasoning for a rating will be denied. Please explain your rating with a few words.</li>
+                    <li>Abusing the Commenting function (e.g. Spamming or non-rating related content) will result in a permanent IP blacklist.</li>
+                </ul>
+                <p><br>We allow users to send submissions, post comments and view the site content without signing up. <br>Please respect this freedom by not abusing our system.</p>
+                <span>Sincerely,<br></span>
+                <span style="font-family:'Brush Script MT'; font-size: 22px;">thePasta Administration</span>
+            </div>
+        </div>
+        <footer>
+            <p>Copyright &copy; 2017 thePasta</p>
+        </footer>
+        <script>
+            var topBar = document.getElementById('topBar');
+            var topLinks = document.getElementsByClassName("fLeft");
+            var topLinks1 = document.getElementsByClassName("fRight");
+
+            function topDropDown() {
+                topBar.style.height = "70px";
+
+                for(var i = 0; i < topLinks.length; i++){
+                    topLinks[i].style.padding = "22px 10px";
+                }
+
+                for(var i = 0; i < topLinks.length; i++){
+                    topLinks1[i].style.padding = "22px 10px";
+                }
+            }
+
+            function topRetract() {
+                topBar.style.height = "31px";
+
+                for(var i = 0; i < topLinks.length; i++){
+                    topLinks[i].style.padding = "2.6px 5px";
+                }
+
+                for(var i = 0; i < topLinks.length; i++){
+                    topLinks1[i].style.padding = "2.6px 5px";
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,6 @@
+** Skal ikke indehole denne linje eller "<" eller ">".
+
+<TITLE OF STORY>
+<AUTHOR>
+<PREVIEWTEXT>
+<STORY>

@@ -1,0 +1,24 @@
+<html>
+<head>
+<link rel="stylesheet" href="intropage.css">
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+<title>thePasta - Loading</title>
+</head>
+
+    
+<body onload="pageload()">
+<h1 style="font-family: 'Amatic SC';">thePasta</h1>
+
+<script>
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+
+async function pageload() {
+    await sleep(2000);
+    window.location.replace("featured.html");
+}
+
+</script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="main.css">
+        <title>thePasta - Guidelines</title>
+    </head>
+    <body>
+        <header id="topBar" onmouseover="topDropDown();" onmouseout="topRetract();" style="height:70px;">
+            <ul id="navBar">
+                <a href="featured.html" class="fLeft" style="padding: 22px 10px;">Featured</a>
+                <a href="gore.html" class="fLeft" style="padding: 22px 10px;">Gore</a>
+                <a href="lore.html" class="fLeft" id="selPage" style="padding: 22px 10px;">Lore</a>
+                <a href="series.html" class="fLeft" style="padding: 22px 10px;">Series</a>
+                <a href="terror.html" class="fLeft" style="padding: 22px 10px;">Terror</a>
+                <a href="urbanlegends.html" class="fLeft" style="padding: 22px 10px;">Urban Legends</a>
+                <a href="submit.html" class="fRight" style="padding: 22px 10px;">Submit</a>
+                <a href="guidelines.html" class="fRight" style="padding: 22px 10px;">Guidelines</a>
+                <a href="updates.html" class="fRight" style="padding: 22px 10px;">Updates</a>
+            </ul>
+        </header>
+        <div id="ContentWrapper">
+            <h1 class="storyHeader" style="font-family:Footlight MT Light; color:#880015; font-size:50;">Lore</h1>
+            <div id="Content">
+            </div>
+        </div>
+        <footer>
+            <p>Copyright &copy; 2017 thePasta</p>
+        </footer>
+        <script>
+            var topBar = document.getElementById('topBar');
+            var topLinks = document.getElementsByClassName("fLeft");
+            var topLinks1 = document.getElementsByClassName("fRight");
+
+            function topDropDown() {
+                topBar.style.height = "70px";
+
+                for(var i = 0; i < topLinks.length; i++){
+                    topLinks[i].style.padding = "22px 10px";
+                }
+
+                for(var i = 0; i < topLinks.length; i++){
+                    topLinks1[i].style.padding = "22px 10px";
+                }
+            }
+
+            function topRetract() {
+                topBar.style.height = "31px";
+
+                for(var i = 0; i < topLinks.length; i++){
+                    topLinks[i].style.padding = "2.6px 5px";
+                }
+
+                for(var i = 0; i < topLinks.length; i++){
+                    topLinks1[i].style.padding = "2.6px 5px";
+                }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <script src="game_regular.js" id="regularScript"></script>
+        <script src="game_aimhit.js" id="aimhitScript"></script>
+        <script src="ui.js"></script>
+        <link rel="stylesheet" href="main.css">
+    </head>
+
+    <body id="theBody">
+        <div id="startButtons">
+            <button class="startButton" id="regular" onclick="startRegular();">Regular</button>
+            <button class="startButton" id="controls" onclick="">Controls</button>
+            <button class="startButton" id="aimhit" onclick="startGame();">Aimhit</button>
+        </div>
+        <div class="ui">
+            <div class="display" id="highscoreDisplay">
+                <span><strong>HIGHSCORE</strong><br><span id="highscorePrint"></span></span>
+            </div>
+            <div class="display" id="speedDisplay">
+                <span><strong>SPEED</strong><br><span id="speedPrint"></span></span>
+            </div>
+            <div class="display" id="pointDisplay">
+                <span><strong>POINTS</strong><br><span id="pointPrint"></span></span>
+            </div>
+            <div class="display" id="lifeDisplay">
+                <span><strong>LIVES</strong><br><span id="lifePrint"></span></span>
+            </div>
+            <br>
+            <span id="popupPrint"><strong></strong></span>
+            <div id="selectButtons">
+                <div id="styleSelectContainer" class="buttonCollection">
+                    <span id="styleSpan"><strong>Styles</strong></span>
+                    <button class="styleButton" id="greenButton" onclick="bgGreen(); colorSwitch();"></button>
+                    <button class="styleButton" id="blueButton" onclick="bgBlue(); colorSwitch();"></button>
+                    <button class="styleButton" id="redButton" onclick="bgRed(); colorSwitch();"></button>
+                    <button class="styleButton" id="whiteButton" onclick="bgWhite(); colorSwitch();"></button>
+                </div>
+                <div id="gamemodeSelectContainer" class="buttonCollection">
+                    <span id="gamemodeSpan"><strong>Difficulity</strong></span>
+                    <button class="gamemodeButton" id="normal" onclick=""></button>
+                    <button class="gamemodeButton" id="hard" onclick=""></button>
+                    <button class="gamemodeButton" id="insane" onclick=""></button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
