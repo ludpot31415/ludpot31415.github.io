@@ -1,1 +1,45 @@
-test
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Curse of Pi</title>
+        
+        <link href="main.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+        
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script type="text/javascript" src="pi.js"></script>
+        <script type="text/javascript" src="audiosynth.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+        <script type="text/javascript" src="style.js"></script>
+        
+        <button class="colorSel" id="colorSel1" onclick="bgStyle(1);"></button>
+        <button class="colorSel" id="colorSel2" onclick="bgStyle(2);"></button>
+        <button class="colorSel" id="colorSel3" onclick="bgStyle(3);"></button>
+        <span id="timeDisplay">CALCULATING...</span>
+
+        <h1 class="title">πPlayer</h1>
+        <div id="info">
+            <span id="selNumHeader">CALCULATING...</span>
+            <br>
+            <span class="numberContainer" id="numbers1"></span>
+            <span class="numberContainer" id="numbers2">LOADING</span>
+            <span class="numberContainer" id="numbers3"></span>
+        </div>
+        <div id="box">
+            <div id="whiteKeyContainer">
+                <div class="whiteKey" id="T0">A#</div>
+                <div class="whiteKey" id="T1"></div>
+                <div class="whiteKey" id="T2"></div>
+                <div class="whiteKey" id="T3"></div>
+                <div class="whiteKey" id="T4"></div>
+                <div class="whiteKey" id="T5"></div>
+                <div class="whiteKey" id="T6"></div>
+                <div class="whiteKey" id="T7"></div>
+                <div class="whiteKey" id="T8"></div>
+                <div class="whiteKey" id="T9"></div>
+            </div>
+        </div>
+    </body>
+</html>
