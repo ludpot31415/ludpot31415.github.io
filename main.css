@@ -1,0 +1,106 @@
+html {
+   background: #ADA996;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+body {
+    margin:0px;
+    font-family: serif;
+}
+
+#topBar {
+    background-color: #666;
+    box-shadow: 0px 2px 60px #666;
+}
+
+.title {
+    font-family: lobster, serif;
+    text-align: center;
+    font-size: 75px;
+    margin:0px;
+}
+
+.subTitle {
+    text-align: center;
+    font-family: Arial;
+    font-size: 25px;
+    margin-bottom: 2px;
+}
+
+.subSubTitle {
+    display: block;
+    text-align: center;
+    font-family: Arial;
+}
+
+hr { 
+  height: 30px; 
+  border-style: solid; 
+  border-color: #8c8b8b; 
+  border-width: 1px 0 0 0; 
+  border-radius: 20px; 
+} 
+hr:before { 
+  display: block; 
+  content: ""; 
+  height: 30px; 
+  margin-top: -31px; 
+  border-style: solid; 
+  border-color: #8c8b8b; 
+  border-width: 0 0 1px 0; 
+  border-radius: 20px; 
+}
+#mainContain {
+    
+}
+
+.column {
+    float:left;
+    width:49vw;
+}
+
+#column1 {
+    
+}
+
+#column2 {
+    
+}
+
+.link {
+    margin:50px auto;
+    width:450px;
+}
+
+img {
+    height: 300px;
+    width: 450px;
+    border-radius: 15px;
+}
+
+.link button {
+    background-color: #9A9;
+    margin:0px auto;
+    margin-top: 5px;
+    border: 0;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    
+    
+
+    -webkit-transition: background-color 0.3s, -webkit-transform 2s; /* Safari */
+    transition: background-color 0.3s;
+}
+
+.link button:hover {
+    background-color: #9D9;
+}
+
+.link a {
+    font-family: Arial;
+    color: #000;
+    text-decoration: none;
+}
