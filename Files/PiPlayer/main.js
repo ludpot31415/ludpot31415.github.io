@@ -2,7 +2,7 @@
 var speed = 1600; // Speed of interval - DO NOT CHANGE!
 var scale_aminor = [["A",3],["B",3],["C",4],["D",4],["E",4],["F#",4],["G",4],["A",4],["B",4],["D",5]]; //Scale used
 
-//AudioSynth Initialization
+//AudioSynth Initialization and Testing
 var piano = Synth.createInstrument('piano'); //Create synth object
 var testInstance = new AudioSynth;
 Synth instanceof AudioSynth; // True
@@ -52,17 +52,19 @@ function displayNum() {
     display[0] = display[0].slice(1);
     display[2] += pi[amounts+6];
     display[2] = display[2].slice(1);
-
-    if (amounts == 1) {
+    if (amounts.toString().slice(-1) == "0") {
+        document.getElementById('selNumHeader').innerHTML = amounts + "th";
+    }
+    if (amounts.toString().slice(-1) == "1") {
         document.getElementById('selNumHeader').innerHTML = amounts + "st";
     }
-    if (amounts == 2) {
+    if (amounts.toString().slice(-1) == "2") {
         document.getElementById('selNumHeader').innerHTML = amounts + "nd";
     }
-    if (amounts == 3) {
+    if (amounts.toString().slice(-1) == "3") {
         document.getElementById('selNumHeader').innerHTML = amounts + "rd";
     }
-    if (amounts > 3) {
+    if (parseInt(amounts.toString().slice(-1)) > 3) {
         document.getElementById('selNumHeader').innerHTML = amounts + "th";
     }
 
