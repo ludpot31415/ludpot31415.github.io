@@ -1,8 +1,14 @@
 var balls = [];
 var enemy = [];
 var ms = (new Date).getTime();
+var song;
+
+function preload() {
+    //song = loadSound("music/space.mp3");
+}
 
 function setup() {
+    //preload();
     createCanvas(window.innerWidth, window.innerHeight);
     background(0);
     stroke(255);
@@ -16,6 +22,7 @@ function setup() {
     setInterval(function() {
         enemy.push(new Enemy());
     },40);
+    //song.play();
 }
 
 function draw() {
