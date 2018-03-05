@@ -1,0 +1,248 @@
+.controls span {
+display:inline-block;
+}
+
+.progressdiv {
+    /* position: absolute; */
+    /* width: 75%; */
+    /* margin-top: 0%; */
+    /* top: 29%; */
+    position: relative;
+    width: 70%;
+    height: 0.3em;
+    top: 28%;
+    left: 15%;
+    background-color: #000;
+    border-radius:10px;
+}
+
+.progressBar
+{
+    background-color: #333;
+    border: 0 none;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    border-radius:10px;
+    overflow:hidden;
+    cursor:pointer;
+}
+
+.progress-bar span 
+{
+    color:red;
+    background-color: red;
+}
+
+.progress-value {
+	padding: 0px 5px;
+	line-height: 20px;
+	margin-left: 5px;
+	font-size: .8em;
+	color: white;
+	height: 100%;
+	float: right;
+}
+
+.spanprogress {
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    /* top: 28%; */
+    /* left: 15%; */
+    background-color: #FF9900;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.progressbutton {
+    background-image: url("../images/fullscreenbutton.png");
+     background-size: contain;
+    background-repeat: no-repeat;
+    bottom: 10%;
+    height: 20%;
+    position: absolute;
+    right: 0%;
+    width: 6%;
+    cursor:pointer;
+}
+
+.video-player {
+   background-color:#262626;
+   border-radius:10px;
+   position: relative; 
+   /*overflow: hidden;*/
+   z-index:1;
+}
+
+.paused {
+	background-image: url(../images/playbutton.png);
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 43%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor:pointer;
+
+
+
+}
+
+
+
+.play {
+	background-image: url(../images/pausebutton.png);
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 43%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor:pointer;
+
+}
+
+.controls 
+{
+	position: absolute;
+    width: 100%;
+    height: 100px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #262626;
+    z-index: 10000;
+    margin-top: -100px;
+}
+
+.title {
+    color: #CCCCCC;
+    position: absolute;
+    left:0;
+    right:0;
+    top:4%;
+    font-size: 100%;
+    text-align: center;
+    font-size:0.6em;
+}
+
+
+
+.videoduration {
+    color: #CCCCCC;
+    position: absolute;
+    left: -16%;
+    /* right: 0; */
+    /* top: -0.4em; */
+    bottom: -0.2em;
+    /* text-align: center; */
+    font-size: 1em;
+}
+
+
+.videototal {
+    color: #CCCCCC;
+    position: absolute;
+    right: -16%;
+    /* right: 0; */
+    /* top: -0.4em; */
+    bottom: -0.2em;
+    /* text-align: center; */
+    font-size: 1em;
+}
+
+.videoframe 
+{
+  margin: auto;
+  margin-bottom:100px;
+  position: relative;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+/*** SOUND + VOLUME CSS ***/
+/* sound */
+div.sound {
+	width: 10%;
+    height: 160%;
+    margin-top: -1%;
+    margin-left: -12%;
+    top: 80%;
+    cursor: pointer;
+    background: url(../images/volumeupbutton.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+div.muted{
+    width: 10%;
+    height: 160%;
+    margin-top: -1%;
+    margin-left: -12%;
+    top: 80%;
+    cursor: pointer;
+    background:url(../images/volumeoff.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* volume */
+.volume{
+	position: absolute;
+    right: 0;
+    left: 0;
+    cursor: pointer;
+    width: 40%;
+    height: 0.3em;
+    background: #333;
+    margin: auto;
+    top: 84%;
+     border-radius:10px;
+    
+}
+.volume .volumeCover{
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:10;
+	width:100%;
+	height:100%;
+     border-radius:10px;
+}
+.volume .volumeBar{
+	display:block;
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	background-color:#FF9900;
+	z-index:5;
+     border-radius:10px;
+}
+
+
+.volume .volumeoff{
+	background-color:#333;
+}
+.soundbutton {
+    position: absolute;
+    background-image: url(../images/progressbutton.png);
+    width: 0.5em;
+    height: 0.5em;
+    background-size: 100% 100%;
+    top: 0;
+    /* left: 15%; */
+    margin-top: -3%;
+    z-index: 20;
+}
