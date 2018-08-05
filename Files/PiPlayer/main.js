@@ -10,7 +10,7 @@ testInstance instanceof AudioSynth; // True
 testInstance === Synth; // True
 
 var d = new Date(); // Used for launchpoint
-var launchpointInMs = 1523367165764; //Launchdate value in ms
+var launchpointInMs = 1533508174760; //Launchdate value in ms
 var amounts = Math.round(Number((d.getTime() - launchpointInMs) / speed)); //Calculate poisition in Pi from Launchdate
 
 var display = ["000000","3","141592"] //Define Display array for the Pi Display. Ignore the content.
